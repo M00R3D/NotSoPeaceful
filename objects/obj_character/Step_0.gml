@@ -1,4 +1,4 @@
-var _hor = keyboard_check(vk_right) - keyboard_check(vk_left);
+var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 
 if(_hor != 0){
     if(place_free(x+_hor*2,y))
