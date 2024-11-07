@@ -39,7 +39,7 @@
   ],
   "name":"spr_character",
   "nineSlice":null,
-  "origin":9,
+  "origin":7,
   "parent":{
     "name":"char",
     "path":"folders/Sprites/char.yy",
@@ -140,7 +140,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":9,
-    "yorigin":13,
+    "yorigin":18,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
