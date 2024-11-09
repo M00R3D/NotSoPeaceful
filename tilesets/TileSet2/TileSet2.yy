@@ -1,14 +1,14 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"TileSet1",
+  "%Name":"TileSet2",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"TileSet1",
-  "out_columns":8,
+  "name":"TileSet2",
+  "out_columns":5,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"tile_tierra_m_1",
-    "path":"sprites/tile_tierra_m_1/tile_tierra_m_1.yy",
+    "name":"tile_fondo_cielo_dia",
+    "path":"sprites/tile_fondo_cielo_dia/tile_fondo_cielo_dia.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -34,5 +34,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":64,
+  "tile_count":30,
 }
