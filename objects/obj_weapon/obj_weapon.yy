@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_character",
+  "%Name":"obj_weapon",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_character",
+  "name":"obj_weapon",
   "overriddenProperties":[],
   "parent":{
-    "name":"char",
-    "path":"folders/Objetos/char.yy",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,12 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_character",
-    "path":"sprites/spr_character/spr_character.yy",
+    "name":"spr_weapon_gun_1",
+    "path":"sprites/spr_weapon_gun_1/spr_weapon_gun_1.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_character",
-    "path":"sprites/spr_character/spr_character.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

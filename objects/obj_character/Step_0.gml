@@ -1,18 +1,3 @@
-// var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-// var _jump = keyboard_check(ord("W"));
-// if(_hor != 0){
-//     if(place_free(x+_hor,y))
-//     {
-//         hspeed=_hor*2
-//     }else{hspeed=0;}
-//     image_xscale=_hor;
-//     sprite_index=spr_character_walk;
-// }else{sprite_index=spr_character;}
-
-// if(place_free(x+_hor,y) and _jump and jump_flag==false){vspeed=-5;jump_flag=true;}
-
-// x+=hspeed;
-/// movement
 var rkey = keyboard_check(ord("D"));
 var lkey = keyboard_check(ord("A"));
 var jkey = keyboard_check(ord("W"));
@@ -38,15 +23,16 @@ if (_hor==0){
     }
 
 // Horizontal collision
-if (place_meeting(x+hspd, y, obj_wall))
+if (place_meeting(x+hspd+global.char_hspd_plus, y, obj_wall))
     {
-    while (!place_meeting(x+sign(hspd), y, obj_wall))
-    x += sign(hspd);
-     hspd = 0;
-    }
+		while (!place_meeting(x+sign(hspd), y, obj_wall))
+			x += sign(hspd);
+			hspd = 0;
+		global.char_hspd_plus=0;
+    }else{x += hspd + global.char_hspd_plus;}
+
 
 //move horizontally
-x += hspd;
 // vertical collision
 if (place_meeting(x, y+vspd, obj_wall))
     {
@@ -56,3 +42,7 @@ if (place_meeting(x, y+vspd, obj_wall))
     }
 //move vertically
 y += vspd;
+
+
+if(global.char_hspd_plus>0){global.char_hspd_plus-=1}
+if(global.char_hspd_plus<0){global.char_hspd_plus+=1}
