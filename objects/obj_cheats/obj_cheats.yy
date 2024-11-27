@@ -17,8 +17,8 @@
   "name":"obj_cheats",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"interact",
+    "path":"folders/Objetos/interact.yy",
   },
   "parentObjectId":null,
   "persistent":false,

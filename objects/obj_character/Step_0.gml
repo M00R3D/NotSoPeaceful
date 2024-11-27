@@ -8,6 +8,7 @@ if (place_meeting(x, y+1, obj_wall))
     if (jkey)
         {
         vspd = -jspd;
+        audio_play_sound(snd_jump, 10, false);
         }
     }
 else{   if (vspd < 10){vspd += grav;}   }
@@ -18,6 +19,14 @@ if (_hor==0){
         sprite_index=spr_character;
     }else
     {
+        if(wait_stepSnd>0)
+        {
+            wait_stepSnd--;
+        }else
+        {
+            wait_stepSnd=choose(14,16,16,17,20,22,27,10);
+            audio_play_sound(snd_step, 10, false);
+        }
         sprite_index=spr_character_walk;
         hspd=spd*_hor;
     }
